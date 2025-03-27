@@ -20,7 +20,10 @@ window.onload = function () {
   let que = Math.floor(Math.random() * what.length);
   let cuando = Math.floor(Math.random() * when.length);
 
-  let frase = who[quien] + " " + action[accion] + " " + what[que] + "" + when[cuando];
-  let parrafo = document.getElementById('excuse');
+  let frase = who[quien] + " " + action[accion] + " " + what[que] + " " + when[cuando];
+  let parrafo = document.getElementById("excuse");
+
+parrafo.innerText = frase;
+
 };
 
